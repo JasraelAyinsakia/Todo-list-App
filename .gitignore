@@ -1,0 +1,22 @@
+echo "__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+env/
+venv/
+.venv/
+*.log
+*.sqlite3
+coverage/
+*.coverage
+.coverage.*
+.pytest_cache/
+.tox/
+.mypy_cache/
+.idea/
+.vscode/
+.DS_Store
+*.swp" > .gitignore
+
