@@ -1,3 +1,6 @@
 cook
 Servr
 eat
+coook
+serve
+wash
