@@ -1,3 +1,5 @@
+from pyexpat.errors import messages
+
 while True:
     user_action = input("Type add, show, edit, complete or exit: ")
     user_action = user_action.strip()
@@ -39,16 +41,16 @@ while True:
         case 'complete':
             number = int(input("Number of the todo to complete: "))
 
-            with open('todos.txt','w') as file:
-                file.writelines(todos)
-            index = number - 1
-            todo_to_remove = todos[index].strip('\n')
+            with open('todos.txt','r') as file:
+                todos = file.readlines()
+            index = number -1
+            todo_to_remove = todos[index].strip('/n')
             todos.pop(index)
 
             with open('todos.txt', 'w') as file:
                 file.writelines(todos)
 
-            message = f"Todo {todo_to_remove} was removed from the list."
+            message = f"Tod {todo_to_remove} was removed from the list."
             print(message)
         case 'exit':
             break

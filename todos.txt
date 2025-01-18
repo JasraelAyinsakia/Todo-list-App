@@ -1,4 +1,7 @@
-good
-food
+Food 
 is 
-eaten
+Drinking 
+water
+is 
+important
+so drink
