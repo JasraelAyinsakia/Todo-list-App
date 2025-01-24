@@ -1,0 +1,5 @@
+temperatures
+17
+34
+23
+32
