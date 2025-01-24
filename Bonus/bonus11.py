@@ -9,4 +9,8 @@ def get_average():
 
 
 average = get_average()
+
+
 print(average)
+
+
