@@ -1,17 +1,5 @@
-def get_todos(filepath="todos.txt"):
-    """ Read a text file and return a list of
-    to-do items
-    """
-    with open(filepath, 'r') as file_local:
-        todos_local = file_local.readlines()
-    return todos_local
-
-
-def write_todos(todos_arg, filepath="todos.txt"):
-    """ Write to-do items list in the text file"""
-    with open(filepath, 'w') as file:
-        file.writelines(todos_arg)
-
+#from functions import get_todos, write_todos
+import functions
 
 while True:
     user_action = input("Type add, show, edit, complete or exit: ")
@@ -20,15 +8,15 @@ while True:
     if user_action.startswith('add'):
         todo = user_action[4:]
 
-        todos = get_todos()
+        todos = functions.get_todos()
 
         todos.append(todo + '\n')
 
-        write_todos(todos)
+        functions.write_todos(todos)
 
     elif user_action.startswith('show'):
 
-        todos = get_todos()
+        todos = functions.get_todos()
 
         for index, item in enumerate(todos):
             item = item.strip('\n')
@@ -41,9 +29,9 @@ while True:
 
             number = number - 1
 
-            todos = get_todos()
+            todos = functions.get_todos()
 
-            write_todos(todos)
+            functions.write_todos(todos)
 
             with open('todos.txt', 'w') as file:
                 file.writelines(todos)
@@ -55,12 +43,12 @@ while True:
         try:
             number = int(user_action[9:])
 
-            todos = get_todos()
+            todos = functions.get_todos()
             index = number -1
             todo_to_remove = todos[index].strip('\n')
             todos.pop(index)
 
-            write_todos(todos)
+            functions.write_todos(todos)
 
             message = f"Tod {todo_to_remove} was removed from the list."
             print(message)
