@@ -1,7 +1,6 @@
 import functions
 import PySimpleGUI as sg
 
-
 label = sg.Text("Type in a to-do")
 input_box =sg.InputText(tooltip="Enter todo", key="todo")
 add_button = sg.Button("Add")
@@ -34,7 +33,7 @@ while True:
             functions.write_todos(todos)
             window['todos'].update(values=todos)
         case 'todos':
-            window['todo'].update(value)
+            window['todo'].update(values)
         case sg.WIN_CLOSED:
             break
 
