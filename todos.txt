@@ -1,25 +1,12 @@
 Food 
-Get a drinkDrinking 
 water
-is 
 important
-{'todo': '', 'todos': ['Get a drink plentyfix bugGet the food\n']}But don't eat
 fix the food
 Make food
 Drink water
 Clean the code
 nNew list
 Great work
-Great work
-Great workGood work
 Example
 Get a drink
-Get a drink
-Get a drink plenty
-Get a drink plenty
- Get a drink plentyfix bugGet the food
-Get a drink plentyfix bugGet the food
-Get a drink plentyfix bugGet the food
-Get a drink plentyfix bugGet the food
-Get a drink plentyfix bugGet the food
 Get help
