@@ -15,11 +15,12 @@ st.write("This app is to help improve your productivity.")
 
 
 for todo in todos:
-    st.checkbox(todo)
+    checkbox = st.checkbox(todo, key=todo)
+    if checkbox:
+        todos.pop(index)
+        functions.write_todos(todos)
+        del st.session_state[todo]
+        st.rerun()
 
 st.text_input(label="", placeholder="Add new todo...",
               on_change=add_todo, key='new_todo')
-
-print("Hello")
-
-st.session_state
