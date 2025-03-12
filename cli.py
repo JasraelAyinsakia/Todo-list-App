@@ -37,7 +37,7 @@ while True:
 
             functions.write_todos(todos)
 
-            with open('todos.txt', 'w') as file:
+            with open('../web_app1/todos.txt', 'w') as file:
                 file.writelines(todos)
         except ValueError:
             print("Your command is not valid")
